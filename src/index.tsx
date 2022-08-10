@@ -5,10 +5,20 @@ import * as serviceWorker from './serviceWorker'
 import { BrowserRouter } from 'react-router-dom'
 import React from 'react'
 
+import AppHeader from './components/appHeader'
+import AppMenu from './components/appMenu'
+import AppFooter from './components/appFooter'
+
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <AppHeader />
+      <AppMenu />
+      <div className="content-wrapper">
+        <App />
+      </div>
+
+      <AppFooter />
     </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root'),
