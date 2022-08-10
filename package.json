@@ -92,6 +92,7 @@
   },
   "lint-staged": {
     "*.{ts,tsx}": [
+      "yarn fix:css",
       "yarn fix:eslint",
       "yarn fix:prettier"
     ]
